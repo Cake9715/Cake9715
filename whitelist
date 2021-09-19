@@ -1,0 +1,32 @@
+local List = {
+    "Ilikecakmaybe",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+}
+local Blacklist = {
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+}
+if not table.find(List, game:GetService("Players").LocalPlayer.Name) then
+    game:GetService("Players").LocalPlayer:Kick()
+end
+
+if table.find(Blacklist, game:GetService("Players").LocalPlayer.Name) then
+    print("Your Blacklisted, go to the server and file a appeal to gain access")
+    wait(5)
+    game:GetService("Players").LocalPlayer:Kick()
+end
