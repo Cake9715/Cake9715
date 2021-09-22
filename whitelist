@@ -26,7 +26,7 @@ if not table.find(List, game:GetService("Players").LocalPlayer.Name) then
 end
 
 if table.find(Blacklist, game:GetService("Players").LocalPlayer.Name) then
-    print("Your Blacklisted, go to the server and file a appeal to gain access")
+    print("Your Blacklisted, goodbye lmao")
     wait(5)
-    game:GetService("Players").LocalPlayer:Kick()
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
 end
