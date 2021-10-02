@@ -4,7 +4,7 @@ local List = {
     "Aerthkil",
     "eyyywasgud",
     "Fakehasthebelt",
-    "",
+    "iLikePerks",
     "Moumin101",
     "xxlooll",
     "Superhasthebelt",
@@ -30,7 +30,7 @@ local List = {
     ""
 }
 local Blacklist = {
-    "iLikePerks",
+    "",
     "",
     "",
     "",
