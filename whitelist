@@ -40,23 +40,7 @@ local Blacklist = {
     ""
 }
 if not table.find(List, game:GetService("Players").LocalPlayer.Name) then
-    -- made by cake not demon
-local meta = getrawmetatable(game) -- gets a rawmetatable.
-local old = meta.__namecall
-
-setreadonly(meta, false) --- set to false so you can write on the metatable.
-
-lplr = game.Players.LocalPlayer -- local Player 
-
-meta.__namecall = newcclosure(function(self, ) --- SYN X only function.
-    local meth = getnamecallmethod() -- Hets the method.
-    if meth == 'Kick' and self == lplr then -- checks for the method and what it's trying to do.
-        return -- returns
-    end
-    return old(self, )  -- returns old self which is the LocalPlayer , IF the method that was used againts you was "Kick".
-end)
-
-setreadonly(meta, true) -- sets the metatable to true so it acts like nothing ever happened after you writing on it.
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
 end
 
 if table.find(Blacklist, game:GetService("Players").LocalPlayer.Name) then
