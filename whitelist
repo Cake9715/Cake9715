@@ -4,7 +4,7 @@ local List = {
     "Aerthkil",
     "eyyywasgud",
     "Fakehasthebelt",
-    "iLikePerks",
+    "",
     "Moumin101",
     "xxlooll",
     "Superhasthebelt",
@@ -30,7 +30,7 @@ local List = {
     ""
 }
 local Blacklist = {
-    "",
+    "iLikePerks",
     "",
     "",
     "",
@@ -45,6 +45,6 @@ end
 
 if table.find(Blacklist, game:GetService("Players").LocalPlayer.Name) then
     print("Your Blacklisted, goodbye lmao")
-    wait(5)
+    wait(1)
     game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
 end
