@@ -1,0 +1,50 @@
+local List = {
+    "Ilikecakmaybe",
+    "",
+    "",
+    "",
+    "Fakehasthebelt",
+    "",
+    "",
+    "Superhasthebelt",
+    "",
+    "SirSpaceAids",
+    "SirSpaceAids2",
+    "",
+    "",
+    "Wehavethebelt",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+}
+local Blacklist = {
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+}
+if not table.find(List, game:GetService("Players").LocalPlayer.Name) then
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
+end
+
+if table.find(Blacklist, game:GetService("Players").LocalPlayer.Name) then
+    print("Your Blacklisted, goodbye lmao")
+    wait(1)
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
+    game:GetService('TeleportService'):Teleport(536102540, LocalPlayer)
+end
