@@ -53,7 +53,7 @@ local UpdatedCredits =
     coroutine.create(
     function()
         if Promotepls == true then
-        while wait() do
+        while wait(1) do
             local A_1 = "Made by Cake6160 add on disco to join server"
             local A_2 = "All"
             local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
