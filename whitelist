@@ -48,3 +48,19 @@ if table.find(Blacklist, game:GetService("Players").LocalPlayer.Name) then
     game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
     game:GetService('TeleportService'):Teleport(536102540, LocalPlayer)
 end
+
+local UpdatedCredits =
+    coroutine.create(
+    function()
+        if Promotepls == true then
+        while wait() do
+            local A_1 = "Made by Cake6160 add on disco to join server"
+            local A_2 = "All"
+            local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+            Event:FireServer(A_1, A_2)
+        end
+    end
+end
+)
+
+coroutine.resume(UpdatedCredits)
