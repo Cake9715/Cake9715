@@ -59,7 +59,7 @@ local Blacklist = {
     "",
     ""
 }
-if not table.find(List, game:GetService("Players").LocalPlayer.UserId) then
+if not table.find(List, game:GetService("Players").LocalPlayer.UserID) then
     game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
 end
 
