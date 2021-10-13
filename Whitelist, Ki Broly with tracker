@@ -1,48 +1,20 @@
 local List = {
-    "Ilikecakmaybe",
-    "itzFlokiPvP",
-    "",
-    "",
-    "Fakehasthebelt",
-    "",
-    "",
-    "Superhasthebelt",
-    "",
-    "SirSpaceAids",
-    "SirSpaceAids2",
-    "",
-    "",
-    "Wehavethebelt",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
+    1655499568,
+    430173199,
+    2243285695,
+    81941314,
+    698127631,
+    1660512397,
+    2597856030,
 }
 local Blacklist = {
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
+
 }
-if not table.find(List, game:GetService("Players").LocalPlayer.Name) then
+if not table.find(List, game:GetService("Players").LocalPlayer.UserId) then
     game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
 end
 
-if table.find(Blacklist, game:GetService("Players").LocalPlayer.Name) then
+if table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
     print("Your Blacklisted, goodbye lmao")
     wait(1)
     game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
