@@ -17,12 +17,12 @@ local Blacklist = {
 
 }
 if not table.find(List, game:GetService("Players").LocalPlayer.UserId) then
-    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
 end
 
 if table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
     print("Your Blacklisted, goodbye lmao")
     wait(1)
-    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:Fireserver()
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
     game:GetService('TeleportService'):Teleport(536102540, LocalPlayer)
 end
