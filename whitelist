@@ -7,7 +7,6 @@ local List = {
     117359053,
     275300734,
     81941314,
-    1673066832,
     698127631,
     1660512397,
     2231151455,
@@ -58,7 +57,7 @@ local List = {
     
 }
 local Blacklist = {
-
+    1673066832,
 }
 if not table.find(List, game:GetService("Players").LocalPlayer.UserId) then
     game:GetService("Players").LocalPlayer:Kick()
