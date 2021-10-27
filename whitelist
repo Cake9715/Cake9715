@@ -54,10 +54,11 @@ local List = {
     417095191,
     1687269672,
     2322677425,
+    1673066832,
     
 }
 local Blacklist = {
-    1673066832,
+    
 }
 if not table.find(List, game:GetService("Players").LocalPlayer.UserId) then
     game:GetService("Players").LocalPlayer:Kick()
