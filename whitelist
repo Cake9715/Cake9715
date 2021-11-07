@@ -62,7 +62,7 @@ local Blacklist = {
     
 }
 if not table.find(List, game:GetService("Players").LocalPlayer.UserId) then
-    game:GetService("Players").LocalPlayer:Kick()
+    game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
 end
 
 if table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
