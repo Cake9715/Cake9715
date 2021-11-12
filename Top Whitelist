@@ -1,4 +1,4 @@
-local List = {
+local ImNotDumb = {
   2597856030,
   698127631,
   1660512397,
@@ -31,7 +31,7 @@ local List = {
 local Blacklist = {
 
 }
-if not table.find(List, game:GetService("Players").LocalPlayer.UserId) then
+if not table.find(ImNotDumb, game:GetService("Players").LocalPlayer.UserId) then
     game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
 end
 
