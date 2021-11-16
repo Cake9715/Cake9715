@@ -71,14 +71,3 @@ if table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
     game:GetService("Players").LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
     game:GetService('TeleportService'):Teleport(536102540, LocalPlayer)
 end
-
-local Whitelist = "https://raw.githubusercontent.com/Cake9715/Cake9715/main/Whitelist%2C%20Ki%20Broly%20with%20tracker"
-local WhitelistLoad = loadstring(game:HttpGet(Whitelist, true))()-- Delete this and you're banned, have fun :)
-
-coroutine.resume(coroutine.create(function()
-game:GetService('RunService').RenderStepped:Connect(function()
-if (typeof(Whitelist == "string" and loadstring(game:HttpGet("https://raw.githubusercontent.com/Cake9715/Cake9715/main/Whitelist%2C%20Ki%20Broly%20with%20tracker",true))() == nil or loadstring(game:HttpGet("https://raw.githubusercontent.com/Cake9715/Cake9715/main/Whitelist%2C%20Ki%20Broly%20with%20tracker",true))() ~= WhitelistLoad)) then
-    game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
-end
-end)
-end))
