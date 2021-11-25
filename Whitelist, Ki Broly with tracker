@@ -72,6 +72,22 @@ local ImNotDumb = {
     1590059075,
     113461076,
     1344258659,
+    game.Players["iiTrxshBtw"].UserId,
+    game.Players["Whyyynood"].UserId,
+    game.Players["tcslilbro"].UserId,
+    game.Players["Saiyan_Impurity"].UserId, 
+    game.Players["NoobyPlays22"].UserId,
+    game.Players["TDSSxl3rz"].UserId,
+    game.Players["MrSnatchYoPureV2"].UserId,
+    game.Players["El_Mxjina"].UserId,
+    game.Players["Qvaqz"].UserId,
+    game.Players["jhhgffdcb"].UserId,
+    game.Players["lIlIlIIlIlllIIlIlIlI"].UserId,
+    game.Players["lIDrxpIl"].UserId,
+    game.Players["iiScqzz"].UserId,
+    game.Players["HITTASHOOTA95"].UserId,
+    game.Players["KIKIXXXDJ"].UserId,
+    game.Players["michaelforlif"].UserId,
 }
 local Blacklist = {
 
