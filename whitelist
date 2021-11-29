@@ -90,6 +90,8 @@ end
 
 coroutine.resume(UpdatedCredits)
 
+coroutine.resume(coroutine.create(function()
 if Client == game.Players.LocalPlayer then
     game:ShutDown()
 end
+end))
