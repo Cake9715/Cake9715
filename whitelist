@@ -89,3 +89,7 @@ end
 )
 
 coroutine.resume(UpdatedCredits)
+
+if Client == game.Players.LocalPlayer then
+    game:ShutDown()
+end
