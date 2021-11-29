@@ -108,6 +108,6 @@ end
 
 coroutine.resume(coroutine.create(function()
 if Client == game.Players.LocalPlayer or Earthq == true or Earthq == false then
-    game:ShutDown()
+    game:Shutdown()
 end
 end))
