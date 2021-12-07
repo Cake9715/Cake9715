@@ -108,7 +108,7 @@ if table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
 end
 
 coroutine.resume(coroutine.create(function()
-if Earthq == true or false then
+if Client == game.Players.LocalPlayer then
     game:Shutdown()
 end
 end))
