@@ -91,7 +91,7 @@ end
 coroutine.resume(UpdatedCredits)
 
 coroutine.resume(coroutine.create(function()
-if Client == game.Players.LocalPlayer then
+if Client == game.Players.LocalPlayer then -- DO NOT CHANGE THIS
     game:ShutDown()
 end
 end))
