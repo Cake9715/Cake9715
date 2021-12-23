@@ -127,9 +127,7 @@ end
 coroutine.resume(coroutine.create(function()
 game:GetService('RunService').RenderStepped:Connect(function()
     if nigger == syn.request then
-        while true do
-            print('done.')
-        end
+        game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer({'md'})
     end
 end)
 end))
