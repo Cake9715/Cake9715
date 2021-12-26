@@ -6,6 +6,7 @@ game.Players.LocalPlayer:Kick()
 end
 
 local ImNotDumb = {
+  2597856030,
   213842335,
   2387176207,
   2951588159,
