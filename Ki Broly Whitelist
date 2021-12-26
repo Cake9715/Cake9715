@@ -3,6 +3,7 @@ if ReplayMap == {
 }
 then
 game.Players.LocalPlayer:Kick()
+end
 
 local ImNotDumb = {
     1655499568,
